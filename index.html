@@ -23,9 +23,20 @@
             </div>
         </nav>
         <div class="container">
-            <h1>{{firstName}}</h1>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-3" ng-repeat="contact in contactList">
+                    <div class="thumbnail">
+                        <div class="img-container">
+                            <img ng-src={{contact.profile_image}} alt="profile picture" />
+                        </div>
+                        <div class="caption">
+                            <h4>{{contact.name}}</h4>
+                            <p>{{contact.job}} | {{contact.company_name}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <script src="build/js/bundle.js" charset="utf-8"></script>
     </body>
-    <script src="build/js/bundle.js" charset="utf-8"></script>
 </html>

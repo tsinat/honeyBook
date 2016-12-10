@@ -15,7 +15,7 @@ var sass = require('gulp-sass');
 
 gulp.task('default', ['build', 'watch', 'serve']);
 
-gulp.task('build', ['js', 'css']);
+gulp.task('build', ['js', 'css', 'html']);
 
 gulp.task('watch', ['watch.js', 'watch.css', 'watch.html']);
 
@@ -58,10 +58,10 @@ gulp.task('clean:js', function() {
         .pipe(rimraf());
 });
 
-// gulp.task('html', function() {
-//         return gulp.src('./html/**/*.html')
-//         .pipe(gulp.dest('./build/html'));
-// })
+gulp.task('html', function() {
+        return gulp.src('./html/**/*.html')
+        .pipe(gulp.dest('./build/html'));
+});
 
 gulp.task('watch.html', function() {
     return gulp.watch('./html/**/*.html', ['html']);

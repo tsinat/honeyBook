@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+@import url("../bower_components/font-awesome/css/font-awesome.min.css");
+
+body {
+    background-color: $color-primary;
+}
+.customNav {
+    height: 70px;
+    background: $color-secondary;
+    border-radius: 0;
+    .contact-header {
+        margin-left:30%;
+        width: 50%;
+        color: $color-text-main;
+    }
+    .search {
+        width: 80%;
+        padding: 15px;
+        position: relative;
+        input {
+            border-radius: 0;
+            color: $color-text-secondary;
+        }
+        .fa-search {
+          position: absolute;
+          top: 24px;
+          right: 27px;
+          font-size: 15px;
+          color: $color-text-secondary;
+        }
+    }
+}

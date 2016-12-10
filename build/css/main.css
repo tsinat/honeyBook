@@ -1,0 +1,25 @@
+@import url("../bower_components/font-awesome/css/font-awesome.min.css");
+body {
+  background-color: #F2F1F2; }
+
+.customNav {
+  height: 70px;
+  background: white;
+  border-radius: 0; }
+  .customNav .contact-header {
+    margin-left: 30%;
+    width: 50%;
+    color: grey; }
+  .customNav .search {
+    width: 80%;
+    padding: 15px;
+    position: relative; }
+    .customNav .search input {
+      border-radius: 0;
+      color: lightgrey; }
+    .customNav .search .fa-search {
+      position: absolute;
+      top: 24px;
+      right: 27px;
+      font-size: 15px;
+      color: lightgrey; }

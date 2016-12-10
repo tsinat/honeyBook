@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> honeyBook Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel='stylesheet' href='build/css/main.css' />
+        <script src="build/bower_components/angular/angular.min.js"></script>
+        <script src="build/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    </head>
+    <body ng-app='honeyBook' ng-controller='mainCtrl'>
+        <nav class="navbar navbar-default customNav">
+            <div class="row">
+                <div class="col-xs-6" >
+                    <h3 class="contact-header">Contact List</h3>
+                </div>
+                <div class="col-xs-6" >
+                    <div class="search">
+                        <span class="fa fa-search"></span>
+                        <input type="text"  class="form-control"  placeholder="search..."></input>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>{{firstName}}</h1>
+        </div>
+
+    </body>
+    <script src="build/js/bundle.js" charset="utf-8"></script>
+</html>

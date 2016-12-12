@@ -1,6 +1,7 @@
-var app = angular.module('honeyBook', ['ui.router']);
+var app = angular.module('honeyBook', ['ui.router','angular-loading-bar']);
 
-app.config(($stateProvider, $urlRouterProvider) => {
+app.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = true;
     $stateProvider
         .state('home', {
             url: '/',

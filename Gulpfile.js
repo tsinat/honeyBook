@@ -13,7 +13,7 @@ var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 
 
-gulp.task('default', ['build', 'watch', 'serve']);
+gulp.task('default', ['build', 'watch']);
 
 gulp.task('build', ['js', 'css', 'html']);
 

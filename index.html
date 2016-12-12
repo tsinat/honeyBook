@@ -4,9 +4,11 @@
         <title> honeyBook Assignment</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="build/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="build/bower_components/angular-loading-bar/build/loading-bar.min.css">
         <link rel='stylesheet' href='build/css/main.css' />
         <script src="build/bower_components/angular/angular.min.js"></script>
         <script src="build/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src='build/bower_components/angular-loading-bar/build/loading-bar.min.js'></script>
     </head>
     <body ng-app='honeyBook' ng-controller='mainCtrl'>
         <nav class="navbar navbar-default customNav">
@@ -32,6 +34,10 @@
                         <div class="caption">
                             <h4>{{contact.name}}</h4>
                             <p>{{contact.job}} | {{contact.company_name}}</p>
+                        </div>
+                        <div class="detail">
+                            <p>Phone Number {{contact.phone}}</p>
+                            <p>{{contact.email}}</p>
                         </div>
                     </div>
                 </div>

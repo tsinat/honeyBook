@@ -64,12 +64,19 @@ html, body {
                     height: auto;
                 }
             }
+            .detail {
+                padding-left: 10px;
+                display: none;
+            }
             &:hover {
                 .img-container {
                     background: white;
                     width: 100%;
                     height: 160px;
                     overflow: hidden;
+                }
+                .detail {
+                    display: block;
                 }
             }
         }

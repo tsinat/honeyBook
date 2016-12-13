@@ -95,7 +95,6 @@ html, body {
                     z-index: 1;
                     border-radius: 50%;
                     transition: margin-bottom .5s ease-in-out;
-                    background-blend-mode: multiply;
                 }
             }
             .caption {
@@ -106,7 +105,7 @@ html, body {
                 }
             }
             .detail {
-                transition: display 1s ease-out;
+                transition: display .5s ease-in-out;
                 padding-left: 10px;
                 line-height: 1;
                 display: none;

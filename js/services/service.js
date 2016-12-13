@@ -1,3 +1,5 @@
+'use strict';
+
 var app = angular.module('honeyBook');
 
 app.service('User', function($http) {

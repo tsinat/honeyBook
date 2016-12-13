@@ -32,13 +32,13 @@ html, body {
                     border-radius: 0;
                     border: 1px solid $color-text-secondary;
                 }
-            }
-            .fa-search {
-                position: absolute;
-                top: 1.5em;
-                right: 1.5em;
-                font-size: 15px;
-                color: $color-text-secondary;
+                .fa-search {
+                    position: absolute;
+                    top: 1.5em;
+                    right: 1.5em;
+                    font-size: 15px;
+                    color: $color-text-secondary;
+                }
             }
             @include placeholder($color-text-secondary);
 
@@ -94,7 +94,7 @@ html, body {
                     width:5em;
                     height: 5em;
                     position: absolute;
-                    bottom:88px;
+                    bottom:94px;
                     left:12;
                     border-radius: 50%;
                     transition: margin-bottom .5s ease-in-out;

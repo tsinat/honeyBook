@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var del = require('del');
-var nodemon = require('nodemon');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var babel = require('gulp-babel');

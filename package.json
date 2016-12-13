@@ -8,6 +8,9 @@
     "postinstall": "bower i && gulp build",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "5.10.1"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -32,6 +35,8 @@
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "nodemon": "^1.11.0",
     "path": "^0.12.7",
     "ui-router": "^1.0.0-alpha.3"
   }

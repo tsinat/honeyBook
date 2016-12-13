@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'mixins';
-@import url("../bower_components/font-awesome/css/font-awesome.min.css");
+@import url("../../bower_components/font-awesome/css/font-awesome.min.css");
 
 html, body {
     background-color: $color-primary;
@@ -16,10 +16,12 @@ html, body {
     margin:0;
     .row {
         margin-right: 0 !important;
-        .contact-header {
-            margin-left:22%;
-            color: $color-text-main;
-            font-size: 1.5em;
+        .col-xs-6 {
+            .contact-header {
+                margin-left:22%;
+                color: $color-text-main;
+                font-size: 1.5em;
+            }
         }
         .search-container {
             .search {
@@ -35,6 +37,7 @@ html, body {
                 position: absolute;
                 top: 1.5em;
                 right: 1.5em;
+                font-size: 15px;
                 color: $color-text-secondary;
             }
             @include placeholder($color-text-secondary);
@@ -138,7 +141,7 @@ html, body {
                 font-size: 2em;
             }
             .search-container {
-                width: 45%;
+                width: 40%;
                 .search {
                 }
             }

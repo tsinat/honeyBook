@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var del = require('del');
+var nodemon = require('nodemon');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var babel = require('gulp-babel');
@@ -13,7 +14,7 @@ var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('start', ['build', 'watch']);
 
 gulp.task('build', ['js', 'css', 'html']);
 

@@ -8,3 +8,4 @@
     npm install
     bower install
     gulp build
+    node server.js

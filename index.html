@@ -30,15 +30,16 @@
                     <div class="thumbnail">
                         <div class="img-container">
                             <img ng-src={{contact.profile_image}} alt="profile picture" />
+                            <img class="icon" ng-src={{contact.icon}}
                         </div>
-                        <div class="caption">
-                            <h4>{{contact.name}}</h4>
-                            <p>{{contact.job}} | {{contact.company_name}}</p>
-                        </div>
-                        <div class="detail">
-                            <p>Phone Number {{contact.phone}}</p>
-                            <p>{{contact.email}}</p>
-                        </div>
+                    </div>
+                    <div class="caption">
+                        <h4>{{contact.name}}</h4>
+                        <span>{{contact.job}} | {{contact.company_name}}</span>
+                    </div><br />
+                    <div class="detail">
+                        <span>Phone Number {{contact.phone}}</span>
+                        <span>{{contact.email}}</span>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,23 @@
+@mixin placeholder($color) {
+    ::-webkit-input-placeholder {
+       color: $color;
+    }
+
+    :-moz-placeholder {
+       color: $color;
+    }
+
+    ::-moz-placeholder {
+       color: $color;
+    }
+
+    :-ms-input-placeholder {
+       color: $color;
+    }
+}
+
+@mixin borderRadius($border) {
+    border-radius: $border;
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+}

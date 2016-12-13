@@ -12,19 +12,19 @@ html, body {
     width:100%;
     height: 70px;
     background: $color-secondary;
-    border-radius: 0;
+    @include borderRadius(0);
     margin:0;
     .row {
         margin-right: 0 !important;
         .contact-header {
-            margin-left:30%;
+            margin-left:20%;
             color: $color-text-main;
             font-size: 1.5em;
         }
         .search-container {
             .search {
-                width: 100%;
-                padding: 15px 0;
+                width: 90%;
+                padding: 1em 0;
                 position: relative;
                 input {
                     border-radius: 0;
@@ -33,17 +33,21 @@ html, body {
             }
             .fa-search {
                 position: absolute;
-                top: 24px;
-                right: 27px;
-                font-size: 15px;
+                top: 1.5em;
+                right: 1.5em;
                 color: $color-text-secondary;
             }
+            @include placeholder($color-text-secondary);
+
         }
     }
 }
 /////////   End header section  //////////
 
 ///////// Spinning Loading icon /////////
+.loading {
+    margin-top: 1em;
+}
 .glyphicon.spinning {
     animation: spin 1s infinite linear;
     -webkit-animation: spin2 1s infinite linear;
@@ -63,12 +67,12 @@ html, body {
 /////////   container section  //////////
 .container {
     width: 80%;
-    padding-top: 80px;
+    padding-top: 5em;
     .col-xs-12, .col-md-6, .col-lg-3 {
         margin:0;
         padding:2px;
         .thumbnail {
-            border-radius: 0 !important;
+            @include borderRadius(0);
             padding:10px;
             height: 340px;
             margin:2px;
@@ -77,22 +81,18 @@ html, body {
             border: 1px solid $color-text-secondary;
             .img-container {
                 transition: max-height .5s ease-in-out;
-                // position: relative;
                 max-height: 200px;
                 overflow: hidden;
                 img {
                     width:100%;
                     height: auto;
-                    background-blend-mode: multiply;
                 }
                 .icon {
-                    width:80px;
-                    height: 80px;
+                    width:5em;
+                    height: 5em;
                     position: absolute;
                     bottom:88px;
                     left:12;
-                    overflow: visible;
-                    z-index: 1;
                     border-radius: 50%;
                     transition: margin-bottom .5s ease-in-out;
                 }
@@ -114,7 +114,7 @@ html, body {
             &:hover {
                 overflow: auto;
                 .img-container {
-                    background: white;
+                    background: $color-body-main;
                     width: 100%;
                     max-height: 160px;
                     overflow: hidden;
@@ -131,16 +131,14 @@ html, body {
     }
 }
 /////////   End container section  //////////
-
 @media (min-width: 768px) {
     .customNav {
         .row {
             .contact-header {
-                margin-left:30%;
                 font-size: 2em;
             }
             .search-container {
-                width: 40%;
+                width: 45%;
                 .search {
                 }
             }

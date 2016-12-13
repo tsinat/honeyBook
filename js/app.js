@@ -6,7 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeSpinner = true;
     $stateProvider
         .state('contact', {
-            url: '/contact',
+            url: '/',
             templateUrl: 'index.html',
             controller: 'mainCtrl'
         });
